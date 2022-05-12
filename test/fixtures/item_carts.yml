@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_cartable: one
+  item_cartable_type: Item cartable
+  quantity: 1
+  cart: one
+
+two:
+  item_cartable: two
+  item_cartable_type: Item cartable
+  quantity: 1
+  cart: two

@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  address: MyString
+  grand_total: 1.5
+
+two:
+  address: MyString
+  grand_total: 1.5

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h3>Your order details for Order number <%= @order.id%> is as follows</h3>
+    <br><br>
+    <table>
+      <tr>
+        <th>Product Name </th>
+        <th>Quantity </th>
+        <th>Unit Cost </th>
+      </tr>
+      <% @order.order_items.each do |order_item| %>
+        <tr>
+          <td><%= order_item.product.title %></td>
+          <td>1</td>
+          <td><%= order_item.unit_cost %></td>
+        </tr>
+      <% end %>
+    </table>
+    <br><br>
+    <h3>Order Grand Total <%= @order.grand_total %></h3>
+  </body>
+</html>
